@@ -1,23 +1,477 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/logo_background.jpg" type="image/png" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Rund ums Haus</title>
   </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+  <body class="container">
+    <header class="header">
+      <div class="menu d-none">
+        <button class="menu__close">
+          <img src="./images/close_icon.svg" alt="close" />
+        </button>
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="nav__list-item">
+              <a class="nav__list-link active" href="#services"
+                >Dienstleistungen</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#about">Über das Unternehmen</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#our_masters"
+                >Unsere Bauarbeiter</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#feedback">Bewertungen</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#contacts">Kontakte</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__top-block">
+        <div class="top-mobile__wrap">
+          <img
+            src="./images/header-phone.svg"
+            alt="phone"
+            width="20"
+            height="20"
+          />
+          <a class="top-block__phone" href="tel:+4917612345678"
+            >+49 176 12345678</a
+          >
+        </div>
+        <div class="top-email__wrap">
+          <img
+            src="./images/header-mail.svg"
+            alt="phone"
+            width="20"
+            height="20"
+          />
+          <a class="top-block__phone" href="mailto:info@hl-rundumshaus.de"
+            >info@hl-rundumshaus.de</a
+          >
+        </div>
+      </div>
+      <div class="header__bottom-block">
+        <img
+          class="bottom-block__logo"
+          src="./images/logo.png"
+          alt="logo"
+          width="177"
+        />
+        <nav class="bottom-block__nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__list-link active" href="#services"
+                >Dienstleistungen</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#about">Über das Unternehmen</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#our_masters"
+                >Unsere Bauarbeiter</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#feedback">Bewertungen</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#contacts">Kontakte</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav__button">
+          <img
+            class="nav__button-img"
+            src="./images/burger.svg"
+            alt="burger"
+            width="20"
+            height="20"
+          />
+        </button>
+      </div>
+      <section class="hero">
+        <h2 class="hero__subtitle">Wir bieten das komplette Spektrum an</h2>
+        <h1 class="hero__title">Bauleistungen an</h1>
+        <p class="hero__text">
+          Ihr Traumprojekt – Unsere Expertise. Mit einem umfassenden Angebot an
+          Bauleistungen setzen wir Ihre Vision in die Realität um.
+        </p>
+        <a class="hero__link" href="#services">Unsere Leistungen</a>
+      </section>
+    </header>
+    <main class="main">
+      <section id="services" class="services">
+        <h2 class="services__title">Unsere Leistungen</h2>
+        <p class="services__text">
+          Entdecken Sie unser breites Angebot an Bauleistungen und finden Sie
+          heraus, wie wir Ihr Projekt in die Realität umsetzen können.
+        </p>
+        <ul class="services__list">
+          <li class="services__item">
+            <img
+              class="services__item-image"
+              src="./images/check.svg"
+              alt="check"
+            />
+            <h3 class="services__item-title">Hausbau</h3>
+            <p class="services__item-text">
+              Wir realisieren Ihr Traumhaus von der Planung bis zur
+              Schlüsselübergabe – alles aus einer Hand.
+            </p>
+          </li>
+          <li class="services__item">
+            <img
+              class="services__item-image"
+              src="./images/check.svg"
+              alt="check"
+            />
+            <h3 class="services__item-title">Sanierung und Renovierung</h3>
+            <p class="services__item-text">
+              Verleihen Sie Ihrem Zuhause neuen Glanz mit unseren umfassenden
+              Renovierungs- und Sanierungsleistungen.
+            </p>
+          </li>
+          <li class="services__item">
+            <img
+              class="services__item-image"
+              src="./images/check.svg"
+              alt="check"
+            />
+            <h3 class="services__item-title">Innenausbau</h3>
+            <p class="services__item-text">
+              Wir gestalten Ihre Innenräume mit hochwertigen Materialien und
+              maßgeschneiderten Lösungen nach Ihren Wünschen.
+            </p>
+          </li>
+          <li class="services__item">
+            <img
+              class="services__item-image"
+              src="./images/check.svg"
+              alt="check"
+            />
+            <h3 class="services__item-title">Fassadenbau und Dämmung</h3>
+            <p class="services__item-text">
+              Schützen Sie Ihr Gebäude und verbessern Sie die Energieeffizienz
+              mit unseren modernen Fassaden- und Dämmungstechnologien.
+            </p>
+          </li>
+          <li class="services__item">
+            <img
+              class="services__item-image"
+              src="./images/check.svg"
+              alt="check"
+            />
+            <h3 class="services__item-title">Garten- und Landschaftsbau</h3>
+            <p class="services__item-text">
+              Wir erschaffen grüne Oasen – individuell geplant und perfekt
+              ausgeführt.
+            </p>
+          </li>
+          <li class="services__item">
+            <img
+              class="services__item-image"
+              src="./images/check.svg"
+              alt="check"
+            />
+            <h3 class="services__item-title">Bauplanung und Beratung</h3>
+            <p class="services__item-text">
+              Von der ersten Idee bis zur Fertigstellung – unsere Experten
+              begleiten Sie in jedem Schritt des Bauprozesses.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="about" class="about">
+        <h2 class="about__title">
+          Bauunternehmen
+          <br />
+          <span class="about__title-span">H&L Rund ums Haus</span>
+        </h2>
+        <p class="about__text">
+          Die Bauunternehmen H&L Rund ums Haus ist Ihr verlässlicher Partner für
+          alle Bauprojekte – vom Neubau über Renovierungen bis hin zu
+          individuellen Innenausbauten. Mit jahrelanger Erfahrung und einem
+          engagierten Team setzen wir Projekte aller Größenordnungen um. Unser
+          Ziel ist es, Ihre Vorstellungen und Träume in die Realität
+          umzusetzen.<br />
+          <br />
+          Wir bieten ein umfassendes Leistungsspektrum an, das von der Planung
+          und Beratung bis zur Fertigstellung reicht. Zu unseren Kernleistungen
+          gehören der Hausbau, Sanierungen, Fassadenarbeiten, Innenausbau sowie
+          Garten- und Landschaftsbau. Bei jedem Projekt setzen wir auf
+          hochwertige Materialien, innovative Technologien und präzise
+          Ausführung.<br />
+          <br />
+          Bei H&L Rund ums Haus stehen Qualität, Transparenz und
+          Kundenzufriedenheit im Mittelpunkt. Wir legen großen Wert auf eine
+          offene Kommunikation mit unseren Kunden und eine nachhaltige Bauweise.
+          Jedes Projekt betrachten wir als individuelle Herausforderung, bei der
+          wir maßgeschneiderte Lösungen anbieten, um Ihre Erwartungen zu
+          übertreffen.
+        </p>
+        <a class="about__link" href="#contacts">Kontaktieren Sie uns</a>
+      </section>
+      <section id="our_masters" class="specialists">
+        <h2 class="specialists__title">Unsere Spezialisten</h2>
+        <ul class="specialists__list">
+          <li class="specialists__item">
+            <img
+              class="specialists__image"
+              src="./images/anna.webp"
+              alt="Anna Müller Projektmanager im Bauwesen"
+            />
+            <h3 class="specialists__name">Anna Müller</h3>
+            <p class="specialists__proffesion">Projektmanager im Bauwesen</p>
+          </li>
+          <li class="specialists__item">
+            <img
+              class="specialists__image"
+              src="./images/friedrich.webp"
+              alt="Friedrich Schneider Bauleiter"
+            />
+            <h3 class="specialists__name">Friedrich Schneider</h3>
+            <p class="specialists__proffesion">Bauleiter</p>
+          </li>
+          <li class="specialists__item">
+            <img
+              class="specialists__image"
+              src="./images/karl.webp"
+              alt="Karl Weber Bauingenieur"
+            />
+            <h3 class="specialists__name">Karl Weber</h3>
+            <p class="specialists__proffesion">Bauingenieur</p>
+          </li>
+          <li class="specialists__item">
+            <img
+              class="specialists__image"
+              src="./images/hans.webp"
+              alt="Hans Bauer Baumaschinenführer"
+            />
+            <h3 class="specialists__name">Hans Bauer</h3>
+            <p class="specialists__proffesion">Baumaschinenführer</p>
+          </li>
+        </ul>
+      </section>
+      <section id="feedback" class="feedback">
+        <h2 class="feedback__title">Was unsere Kunden über uns sagen</h2>
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <div class="feedback__item-wrap">
+              <img
+                class="feedback__icon"
+                src="./images/user-icon.png"
+                alt="user-icon"
+              />
+              <h3 class="feedback__name">Klaus Meyer</h3>
+            </div>
+            <p class="feedback__text">
+              Hervorragende Arbeit von H&L rund ums Haus! Das Team war
+              pünktlich, professionell und hat unsere Wünsche perfekt umgesetzt.
+              Besonders beeindruckt war ich von der schnellen und sauberen
+              Arbeit. Sehr zu empfehlen!
+            </p>
+          </li>
+          <li class="feedback__item">
+            <div class="feedback__item-wrap">
+              <img
+                class="feedback__icon"
+                src="./images/user-icon.png"
+                alt="user-icon"
+              />
+              <h3 class="feedback__name">Lisa Schmidt</h3>
+            </div>
+            <p class="feedback__text">
+              Wir haben H&L rund ums Haus für eine Renovierung unseres
+              Badezimmers beauftragt und waren insgesamt sehr zufrieden. Kleine
+              Verzögerungen gab es, aber das Endergebnis hat uns überzeugt.
+              Gerne wieder!
+            </p>
+          </li>
+          <li class="feedback__item">
+            <div class="feedback__item-wrap">
+              <img
+                class="feedback__icon"
+                src="./images/user-icon.png"
+                alt="user-icon"
+              />
+              <h3 class="feedback__name">Johannes Becker</h3>
+            </div>
+            <p class="feedback__text">
+              Großartiger Service und qualitativ hochwertige Ausführung. Die
+              Mitarbeiter von H&L rund ums Haus sind echte Profis, die auf jedes
+              Detail achten. Unser Haus sieht jetzt aus wie neu!
+            </p>
+          </li>
+          <li class="feedback__item">
+            <div class="feedback__item-wrap">
+              <img
+                class="feedback__icon"
+                src="./images/user-icon.png"
+                alt="user-icon"
+              />
+              <h3 class="feedback__name">Marie Fischer</h3>
+            </div>
+            <p class="feedback__text">
+              Die Zusammenarbeit mit H&L rund ums Haus war angenehm und
+              unkompliziert. Der Preis war fair, und die Arbeiten wurden
+              rechtzeitig abgeschlossen. Ich hätte mir mehr Beratung zur
+              Materialauswahl gewünscht, aber insgesamt bin ich sehr zufrieden.
+            </p>
+          </li>
+          <li class="feedback__item">
+            <div class="feedback__item-wrap">
+              <img
+                class="feedback__icon"
+                src="./images/user-icon.png"
+                alt="user-icon"
+              />
+              <h3 class="feedback__name">Thomas Wagner</h3>
+            </div>
+            <p class="feedback__text">
+              Ich kann H&L rund ums Haus nur empfehlen! Die Fachleute sind
+              zuverlässig, freundlich und arbeiten auf hohem Niveau. Sie haben
+              unser Projekt in Rekordzeit abgeschlossen und dabei höchste
+              Qualität geliefert.
+            </p>
+          </li>
+          <li class="feedback__item">
+            <div class="feedback__item-wrap">
+              <img
+                class="feedback__icon"
+                src="./images/user-icon.png"
+                alt="user-icon"
+              />
+              <h3 class="feedback__name">Sabine Köhler</h3>
+            </div>
+            <p class="feedback__text">
+              Wir haben H&L rund ums Haus für eine Außengestaltung beauftragt,
+              und das Team hat hervorragende Ideen eingebracht. Das Endergebnis
+              ist wunderschön geworden! Einziger Kritikpunkt: die Kommunikation
+              hätte etwas besser sein können, aber die Arbeit war einwandfrei.
+            </p>
+          </li>
+        </ul>
+      </section>
     </main>
+    <footer id="contacts" class="footer">
+      <img class="footer__logo" src="./images/logo.png" alt="logo" />
+      <div class="footer__wrap">
+        <div class="footer__contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <div class="contacts__image-wrap">
+                <img
+                  class="contacts__image"
+                  src="./images/place.svg"
+                  alt="place"
+                />
+              </div>
+              <div class="contats__text-wrap">
+                <h4 class="contacts__title">Unser Adresse</h4>
+                <p class="contacts__text">
+                  Musterstraße 12, 10115 Berlin, Deutschland
+                </p>
+              </div>
+            </li>
+            <li class="contacts__item">
+              <div class="contacts__image-wrap">
+                <img
+                  class="contacts__image"
+                  src="./images/phone.svg"
+                  alt="phone"
+                />
+              </div>
+              <div class="contats__text-wrap">
+                <h4 class="contacts__title">Unsere Telefonnummer</h4>
+                <p class="contacts__text">+49 176 12345678</p>
+              </div>
+            </li>
+            <li class="contacts__item">
+              <div class="contacts__image-wrap">
+                <img
+                  class="contacts__image"
+                  src="./images/mail.svg"
+                  alt="mail"
+                />
+              </div>
+              <div class="contats__text-wrap">
+                <h4 class="contacts__title">Unsere E-Mail</h4>
+                <p class="contacts__text">info@hl-rundumshaus.de</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav__list">
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#services">Dienstleistungen</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#about">Über das Unternehmen</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#our_masters"
+                >Unsere Bauarbeiter</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link" href="#feedback">Bewertungen</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__list-link active" href="#contacts">Kontakte</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      const menuOpenBtn = document.querySelector('.nav__button');
+      const menuCloseBtn = document.querySelector('.menu__close');
+      const menu = document.querySelector('.menu');
+      const menuLinks = document.querySelectorAll('.nav__list-link');
 
-    <load src="./partials/footer.html" />
+      menuOpenBtn.addEventListener('click', handleMenuOpen);
+      menuCloseBtn.addEventListener('click', handleMenuOpen);
+      menuLinks.forEach(link =>
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          menu.classList.toggle('d-none');
+          setTimeout(() => {
+            const target = document.querySelector(link.getAttribute('href'));
+            target.scrollIntoView({ behavior: 'smooth' });
+          }, 300);
+        })
+      );
 
-    <script type="module" src="./main.js"></script>
+      function handleMenuOpen(e) {
+        e.preventDefault();
+        menu.classList.toggle('d-none');
+      }
+    </script>
   </body>
 </html>

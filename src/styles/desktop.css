@@ -1,0 +1,139 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+    max-width: 100%;
+  }
+  .top-email__wrap {
+    display: flex;
+  }
+  .bottom-block__nav {
+    display: block;
+  }
+  .nav__button-img {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .nav__list-link {
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-align: center;
+  }
+  .hero__subtitle {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .hero__title {
+    font-size: 56px;
+    line-height: 84px;
+  }
+  .hero__text {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 700px;
+  }
+  .services__title,
+  .specialists__title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .services__text {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    max-width: 700px;
+  }
+  .services__list {
+    margin-top: 24px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px 38px;
+    align-items: center;
+    justify-content: center;
+  }
+  .services__item {
+    min-width: 424px;
+    max-width: 424px;
+    height: 229px;
+    background: #ffffff;
+    padding: 24px 16px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .about__title {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 36px;
+    text-align: left;
+  }
+  .about__title-span {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 36px;
+    text-align: left;
+    color: #ce2824;
+  }
+  .about__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+  .specialists__list {
+    width: 100%;
+    height: 414px;
+    margin: 0 auto;
+  }
+  .specialists__item {
+    max-width: 312px;
+    min-width: 312px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    align-items: center;
+  }
+  .specialists__image {
+    width: 312px;
+    height: 320px;
+  }
+  .feedback__title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .feedback__list {
+    height: 200px;
+  }
+  .feedback__item {
+    max-width: 576px;
+    min-width: 576px;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+}
