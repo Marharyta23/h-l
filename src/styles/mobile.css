@@ -258,6 +258,7 @@
   flex-direction: column;
   background-color: #ffffff;
   align-items: center;
+  overflow-y: hidden;
 }
 .specialists__image {
   width: 250px;
