@@ -113,7 +113,6 @@
   }
   .specialists__image {
     width: 312px;
-    height: 320px;
   }
   .feedback__title {
     font-size: 28px;
@@ -125,6 +124,20 @@
   .feedback__item {
     max-width: 576px;
     min-width: 576px;
+  }
+  .footer__nav {
+    display: block;
+    margin-top: 48px;
+  }
+  .footer__nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
