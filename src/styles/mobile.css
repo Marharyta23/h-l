@@ -6,7 +6,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgb(236 84 84 / 60%), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(rgb(231 231 231 / 60%), rgb(0 0 0 / 60%));
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -463,4 +463,31 @@
 }
 .specialists__item:hover .photo-text {
   transform: translateY(0%);
+}
+.price {
+  padding: 60px 24px;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.heating-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.heating-table th,
+.heating-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+}
+.heating-table thead {
+  background-color: #ce2824;
+  color: #fff;
+}
+
+.price h2 {
+  margin-bottom: 0;
 }

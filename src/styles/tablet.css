@@ -124,4 +124,13 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  .heating-table th,
+  .heating-table td {
+    padding: 15px;
+    font-size: 16px;
+    gap: 20px;
+  }
+  .price {
+    padding: 40px 24px;
+  }
 }

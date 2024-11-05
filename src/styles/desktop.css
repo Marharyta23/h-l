@@ -139,6 +139,18 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  .heating-table {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .heating-table th,
+  .heating-table td {
+    padding: 20px;
+    font-size: 18px;
+  }
+  .price {
+    padding: 40px 24px;
+  }
 }
 
 @media screen and (min-width: 1399px) {
