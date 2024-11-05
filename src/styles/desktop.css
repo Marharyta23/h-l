@@ -140,7 +140,7 @@
     justify-content: space-between;
   }
   .heating-table {
-    max-width: 1200px;
+    max-width: 1320px;
     margin: 0 auto;
   }
   .heating-table th,
@@ -154,7 +154,8 @@
 }
 
 @media screen and (min-width: 1399px) {
-  .about {
+  .about,
+  .price {
     display: flex;
     flex-direction: column;
     padding: 40px 24px;
