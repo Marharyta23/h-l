@@ -6,7 +6,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgb(231 231 231 / 60%), rgb(0 0 0 / 60%));
+  background-image: linear-gradient(rgb(231 231 231 / 60%), rgb(0 0 0 / 90%)),
+    url('../images/bg-mob.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -66,14 +67,14 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 21.6px;
-  text-align: left;
+  text-align: center;
   color: #ffffff;
 }
 .hero__title {
   font-size: 30px;
   font-weight: 600;
   line-height: 45px;
-  text-align: left;
+  text-align: center;
   color: #ce2824;
 }
 .hero__text {
@@ -245,15 +246,15 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 348px;
+  height: 250px;
   overflow-x: auto;
   flex-wrap: nowrap;
   gap: 24px;
 }
 .specialists__item {
   position: relative;
-  max-width: 250px;
-  min-width: 250px;
+  max-width: 348px;
+  min-width: 348px;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -261,7 +262,7 @@
   overflow-y: hidden;
 }
 .specialists__image {
-  width: 250px;
+  width: 348px;
   height: 100%;
 }
 .specialists__name {
@@ -346,7 +347,7 @@
   margin: auto 0;
 }
 .footer {
-  background-color: #222222;
+  background: linear-gradient(rgb(148 148 148 / 60%), rgb(0 0 0 / 90%));
   padding: 40px 24px;
 }
 .footer__logo {
@@ -390,7 +391,7 @@
   font-weight: 700;
   line-height: 14.4px;
   text-align: left;
-  color: #8c8c8c;
+  color: #000000;
 }
 .contacts__text {
   font-size: 14px;
@@ -486,7 +487,7 @@
   font-size: 14px;
 }
 .heating-table thead {
-  background-color: #ce2824;
+  background-color: #8c8c8c;
   color: #fff;
 }
 

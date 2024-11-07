@@ -1,4 +1,8 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header {
+    background-image: linear-gradient(rgb(231 231 231 / 60%), rgb(0 0 0 / 90%)),
+      url('../images/bg.png');
+  }
   .container {
     min-width: 768px;
     max-width: 1200px;
@@ -86,18 +90,18 @@
     text-align: left;
   }
   .specialists__list {
-    height: 414px;
+    height: 300px;
   }
   .specialists__item {
-    max-width: 300px;
-    min-width: 300px;
+    max-width: 414px;
+    min-width: 414px;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     align-items: center;
   }
   .specialists__image {
-    width: 300px;
+    width: 414px;
   }
   .feedback__title {
     font-size: 24px;
